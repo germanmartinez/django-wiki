@@ -103,6 +103,7 @@ INSTALLED_APPS = [
     'wiki.plugins.attachments',
     'wiki.plugins.notifications',
     'mptt',
+    'wysihtml5'
 ]
 
 # A sample logging configuration. The only tangible logging
@@ -157,6 +158,8 @@ except ImportError:
 
 # "Secret" key for the prepopulated db
 SECRET_KEY = 'b^fv_)t39h%9p40)fnkfblo##jkr!$0)lkp6bpy!fi*f$4*92!'
+
+WIKI_EDITOR = 'wiki.editors.wysihtml5_editor.WysiHtml5'
 
 try:
     from testproject.settings.local import *
